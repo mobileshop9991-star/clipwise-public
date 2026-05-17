@@ -48,11 +48,11 @@ User Request
 ┌─────────────────────────────────────────────┐
 │        AI PIPELINE                           │
 │                                              │
-│  Video input ──► Gemini 2.0 Flash            │
+│  Video input ──► Gemini 2.5 Flash            │
 │                  (watches actual frames)      │
 │                         │                     │
 │                         ▼                     │
-│  Gemini analysis ──► Claude 3.5 Sonnet       │
+│  Gemini analysis ──► Claude 4.6 Sonnet       │
 │                      (with knowledge context) │
 │                         │                     │
 │                         ▼                     │
@@ -232,13 +232,13 @@ User conversation
 |-------|-----------|-----|
 | Framework | Next.js 14 (App Router) | SSR + API routes + i18n in one |
 | Database | Supabase (PostgreSQL + RLS) | Auth + realtime + row-level security |
-| AI — Vision | Gemini 2.0 Flash | Watches actual video frames (not just metadata) |
-| AI — Intelligence | Claude 3.5 Sonnet | Structured reasoning with knowledge injection |
+| AI — Vision | Gemini 2.5 Flash | Watches actual video frames (not just metadata) |
+| AI — Intelligence | Claude 4.6 Sonnet | Structured reasoning with knowledge injection |
 | Video Processing | FFmpeg WASM | Client-side compression, no server upload |
 | Email | Resend + Claude | AI-personalized lifecycle emails with tracking |
 | Payments | WayForPay | Ukrainian market (Visa/MC in UAH) |
 | Rate Limiting | Upstash Redis | Per-user rate limits on all API routes |
-| Deployment | Vercel | Auto-deploy, edge functions, cron |
+| Deployment | Railway | Auto-deploy, containerized, cron |
 | i18n | next-intl | Ukrainian + English |
 | Social Data | Apify | TikTok, Instagram, YouTube scraping |
 
