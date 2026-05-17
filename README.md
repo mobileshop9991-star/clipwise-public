@@ -30,7 +30,7 @@ Clipwise is a **knowledge-driven** AI platform. Every AI call is backed by 35+ c
 ## Core Features
 
 ### AI Video Analysis
-- **Pre-publish:** Gemini 2.0 Flash watches actual video frames → scores Hook/Pace/Value/CTA/Quality (0-100) with timestamped fixes
+- **Pre-publish:** Gemini 2.5 Flash watches actual video frames → scores Hook/Pace/Value/CTA/Quality (0-100) with timestamped fixes
 - **Post-publish:** Dropout zone diagnostics (0-10% hook fail, 10-30% pacing, 30-60% relevance, 60%+ length), engagement benchmarking vs platform norms by account size
 
 ### Trend Adaptation
@@ -74,13 +74,13 @@ See [ARCHITECTURE.md](./ARCHITECTURE.md) for the full technical breakdown includ
 |-------|-----------|
 | Framework | Next.js 14 (App Router, TypeScript) |
 | Database & Auth | Supabase (PostgreSQL + Row-Level Security) |
-| AI — Vision | Gemini 2.0 Flash |
-| AI — Intelligence | Claude 3.5 Sonnet (Anthropic) |
+| AI — Vision | Gemini 2.5 Flash |
+| AI — Intelligence | Claude 4.6 Sonnet (Anthropic) |
 | Knowledge Base | 35+ proprietary playbook files |
 | Video Processing | FFmpeg WASM (client-side) |
 | Email | Resend + AI personalization |
 | Payments | WayForPay (Ukraine) |
-| Deployment | Vercel |
+| Deployment | Railway |
 | i18n | next-intl (Ukrainian + English) |
 
 ## Pricing
